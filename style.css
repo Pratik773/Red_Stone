@@ -28,18 +28,21 @@ h1{
 }
 .header .navbar{
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(247, 222, 226);
+  box-shadow: 1px 1px 20px black;
 }
 .header .navbar .logo-link{
   width:100px;
   font-size: 29.7px;
   font-weight: 400;
   color:#444;
+  
 }
 .header .navbar .logo-link span{
   width:100px;
@@ -52,13 +55,13 @@ h1{
     position:relative;
     padding: 10px;
     text-transform: capitalize;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;    
     color:#444;
-    transition: all 1s;
+    /* transition: all 1s; */
   }
   .header .navbar .navigation .link:hover{
-    color:red;
+    color:rgb(200, 4, 4);
 
   }
   /* .header .navbar .navigation .link::after{
@@ -81,6 +84,7 @@ h1{
   .header .navbar .navigation {
  display: flex;
  gap:0.8rem;  
+ 
   }
   
 .home{
@@ -100,6 +104,7 @@ h1{
  justify-content: flex-end;
  gap: 0.6rem;  
  width: 50%;
+ 
 }
 .header .navbar .controls .icon{
     position:relative;
@@ -115,6 +120,7 @@ h1{
     cursor: pointer;
     border-radius: 50%;
     border: 1.8px solid #eee;
+    background-color: grey;
   }
   .header .navbar .controls .icon:hover{
    background-color: #000;
@@ -170,8 +176,8 @@ h1{
    
   }
   .home .items .item .content .btn:hover{    
-    color: #fff; 
-    background-color: #000;   
+    color: #000; 
+    background-color: #fff;   
   }
 
   .home .items .item .box{
@@ -231,48 +237,70 @@ h1{
    background-color: #e0360b;   
   }
   .about{
-background-color: rgb(246, 189, 189);
+background-color: rgb(246, 195, 195);
   }
   .about h2{
     margin-left: 100px;
     margin-bottom: 20px;
+    
+    font-size: 30px;
   }
   .about h2 span{
     color: brown;
+    font-size: 40px;
   }
   .about .row{
     display: flex;
   }
   .about .row .img{
-    width: 50%;
+    width: 90%;
     height: 30%; 
      margin-left: 80px;
   }
   .about .row .img img{
-  box-shadow: 10px 10px black;
-  width: 90%;
+  box-shadow: 20px 20px 10px black;
+  width: 100%;
   }
   .about .content{
-    margin-left: 0px;
+    margin-left: 10px;
     margin-top: 40px;
+
+    
   }
+  .about .row .content h3 {
+    margin-left: 60px;
+  font-size: 1.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+  }
+  .about .row .content p {
+  font-size: 1rem;
+  
+  
+  line-height: 2;
+  padding: 1rem 4rem;
+}
   .about .content a{
     border: 1px solid rgb(90, 46, 46);
-    margin-top: 100px;
-    background-color:rgb(246, 165, 165) ;
+    
+    background-color:rgb(240, 208, 208) ;
     color: black;
     border-radius: 1rem;
     padding:0.5rem;
+    margin-left: 60px;
+   
   }
   .about .content a:hover{
-    background-color:rgb(138, 74, 74) ;
+    background-color:rgb(245, 166, 166) ;
+    transition: all 0.5s;
   }
   .about .box-container{
     display:flex;
     margin-left: 30px;    
   }
   .about .box-container .boxx:hover{
-    box-shadow: 10px 10px 0.5px black;
+    box-shadow: 1px 10px 20px black;
+    transition: all 0.5s;
   }
   .about .box-container .boxx{    
     border: 2px solid black;
@@ -281,7 +309,7 @@ background-color: rgb(246, 189, 189);
     margin: 40px;
     text-align: center;
     border-radius: 1rem;
-    background-color: rgb(150, 66, 66);    
+    background-color: rgb(233, 161, 161);    
   }
   .about .box-container .boxx h3{
     padding-top: 1.6rem;
@@ -289,4 +317,138 @@ background-color: rgb(246, 189, 189);
   .about .box-container .boxx p{
     padding-top: 0.2rem;
     font-size: 20px;
+  }
+  .services{
+    background-color: #bdb9b9;
+  }
+  .services h2 span{
+    color:rgb(99, 99, 99);
+    font-size: 45px;
+  }
+  .services h2{
+    font-size: 30px;
+    margin-left: 120px;
+    margin-bottom: 0px;
+    padding: 1.8rem;
+    font-family: sans-serif;
+   
+  }
+  .services .box-container .por1{
+    display:flex;
+  }
+  .services .box-container .por2{
+    display:flex;
+    margin-left: 10px;
+  }
+  .services .box-container .por1 .box{
+    
+    margin-left: 120px;
+    border: 2px solid black;
+    width: 15%;
+    height: 230px;
+    margin-top: 0px;
+    text-align: center;
+    
+    background-color: #fff;
+  }
+  .services .box-container .por2 .box{    
+    margin-left: 117px;
+    border: 2px solid black;
+    margin-top: 40px;
+    width: 15%;
+    height: 230px;    
+    text-align: center;   
+    background-color:#fff;
+    margin-bottom: 20px;
+  }
+  .services .box-container .por2 .box img{
+        height: 150px    
+  }
+  .services .box-container .por1 .box img{
+    height: 150px;
+    margin-top: 10px;
+  }
+  .services .box-container .por2 .box img:hover{
+        height:155px;
+        transition: all 0.2s;    
+  }
+  .services .box-container .por1 .box img:hover{
+    height:155px;
+        transition: all 0.2s;
+  }
+  .services .box-container .por1 .box h3{
+    margin-top: 15px;
+    font-family: sans-serif;
+  }
+  .services .box-container .por2 .box h3{
+    margin-top: 20px;
+    font-family: sans-serif;
+  }
+  .contact{
+    background-color:rgb(103, 75, 75);
+  }
+  .contact h2{
+    font-size: 30px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    padding: 1.8rem;
+    font-family: sans-serif;
+  }
+  .contact h2 span{
+    font-size: 40px;
+    color:#8c8787
+  }
+  .contact .row{
+    display:flex;
+  }
+  .contact .row .imag{
+    width:40%;
+    height: 500px;
+    margin-left: 90px;
+    margin-bottom:50px;
+  }
+  .contact .row .imag img{
+    width:100%;
+    height:100%;
+  }
+  .contact .row .f{
+    background-color: rgb(235, 197, 197);
+    height: 500px;
+    width:40%;
+    margin-left:40px;
+    border: 2px solid rgb(241, 221, 221);
+  }
+  .contact .row form h3{
+    margin-top: 15px;
+    font-size: 25px;
+    margin-left:15px;
+    margin-bottom:30px;
+  }
+  .contact .row form .box{
+    width:95%;
+    height: 50px;
+    padding: 1rem;
+    margin-left:15px;
+    margin-bottom:10px;
+    background-color: rgb(243, 233, 233);
+    border: 0.5px solid rgb(241, 221, 221);
+  }
+  .contact .row form .boxx{
+    background-color: rgb(243, 233, 233);
+    width:95%;
+    height: 140px;
+    padding: 1rem;
+    margin:15px;
+    border: 0.5px solid rgb(241, 221, 221);
+  }
+  .contact .row form .btn{
+    background-color:rgb(134, 88, 88);
+    height: 40px;
+    padding: 0.5rem;
+    margin-left:15px;
+    font-size: 20px;
+    border: 0.5px solid rgb(104, 85, 85);
+  }
+  .contact .row form .btn:hover{
+    background-color:rgb(102, 68, 68);
   }
